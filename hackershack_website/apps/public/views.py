@@ -12,3 +12,6 @@ def about(request: HttpRequest) -> HttpResponse:
 
 def contact(request: HttpRequest) -> HttpResponse:
     return render(request, "contact.html")
+
+def robots(request: HttpRequest) -> HttpResponse:
+    return render(request, "robots.txt")
