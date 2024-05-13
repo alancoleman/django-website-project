@@ -23,9 +23,9 @@ COPY hackershack_website ./hackershack_website
 
 EXPOSE 8000
 
-#FROM production as development
+FROM production as development
 
-#COPY requirements/dev.txt ./requirements/dev.txt
-#RUN pip install -r ./requirements/dev.txt
+COPY requirements/dev.txt ./requirements/dev.txt
+RUN pip install -r ./requirements/dev.txt
 
-#COPY . .
+COPY . .
