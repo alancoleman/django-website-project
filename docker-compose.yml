@@ -14,6 +14,7 @@ x-app-variables: &app-variables
 
 services:
   website:
+    # You could specify a path here that points to a docker hub repo
     image: hackershack-website-tutorial:latest
     command: python manage.py runserver 0.0.0.0:8000
     volumes: *service-volumes
